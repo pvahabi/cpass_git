@@ -8,7 +8,6 @@ import Header from "app/components/Layout/Header";
 import Footer from "app/components/Layout/Footer";
 
 import { pollForAccountUpdate } from "app/util/polling";
-import caduceus from "app/assets/images/caduceus.svg";
 
 @connect(
   ({ web3, wallet }) => ({
@@ -79,7 +78,6 @@ export default class App extends Component {
       <div className="app">
         <Header />
         <main className="container">{this.renderView()}</main>
-        <img className="caduceus" src={caduceus} role="presentation" />
         <Footer />
       </div>
     );

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getWalletInfo } from "../../actions/walletActions";
-import wellLogo from "app/assets/images/well_logo.png";
 
 @connect(({ wallet }) => ({ wallet }), { getWalletInfo })
 export default class Header extends Component {
@@ -15,15 +14,13 @@ export default class Header extends Component {
     return (
       <header>
         <div className="nav-desktop">
-          <div className="logo">
-            <img src={wellLogo} role="presentation" />
-          </div>
+          <div className="logo">Cpass</div>
           <div className="balances">
             <p>
               ETH: <span className="amount">{etherBalance}</span>
             </p>
             <p>
-              Well Token: <span className="amount">{tokenBalance}</span>
+              Cpass Token: <span className="amount">{tokenBalance}</span>
             </p>
           </div>
         </div>

@@ -121,7 +121,7 @@ export default class Payment extends Component {
             }
             disabled={status === TransactionStatus.PENDING}
           >
-            Pay with Well Tokens
+            Pay with Cpass Tokens
           </button>
         </div>
       );
